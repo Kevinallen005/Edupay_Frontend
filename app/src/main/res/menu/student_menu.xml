@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/myProfile"
+            android:title="My Profile"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/overallduelist"
+            android:title="Overall Due List"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/historyandreceipts"
+            android:title="History &amp; receipts"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/splitter"
+            android:title="Fee Split Options"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/buspass"
+            android:title="Bus Pass Request"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/mybuspass"
+            android:title="My Bus Pass"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/contactus"
+            android:title="Contact Us"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/home"/>
+
+
+    </group>
+
+</menu>

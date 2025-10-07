@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FeePayment" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/popup_item_bg</item>
+        <item name="popupMenuStyle">@style/CustomPopupMenu</item>
+    </style>
+
+
+
+
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_bg</item>
+        <item name="android:listSelector">@drawable/popup_item_bg</item>
+    </style>
+
+
+    <style name="PopupMenuOverlay" parent="">
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorControlHighlight">@color/lightgrey</item>
+    </style>
+
+
+
+    <style name="Theme.FeePayment" parent="Base.Theme.FeePayment" />
+</resources>

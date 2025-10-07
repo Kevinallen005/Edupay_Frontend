@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/Dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/DatabaseManagement"
+            android:title="Database Management"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/Defaulters"
+            android:title="Defaulters"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/BusReq"
+            android:title="Bus Pass Requests"
+            android:icon="@drawable/home"/>
+
+
+        <item
+            android:id="@+id/SupportCeter"
+            android:title="Support Ceter"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/home"/>
+
+
+    </group>
+
+</menu>

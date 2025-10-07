@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all"
+        android:title="ALL"
+        android:icon="@drawable/students"/>
+
+    <item
+        android:id="@+id/paid"
+        android:title="PAID"
+        android:icon="@drawable/imposefeegroup"/>
+
+    <item
+        android:id="@+id/due"
+        android:title="DUE"
+        android:icon="@drawable/scholar"/>
+
+    <item
+        android:id="@+id/sort_asc"
+        android:title="SORT ASC ID"
+        android:icon="@drawable/uparrow"/>
+
+    <item
+        android:id="@+id/sort_desc"
+        android:title="SORT DESC ID"
+        android:icon="@drawable/downarrow"/>
+
+
+
+</menu>

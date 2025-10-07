@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScholarshipActivity">
+
+    <!-- Admin Top Bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/adminhomeicon" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/whiteicon" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scholarship"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"/>
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+
+
+
+    <!-- The buttons and texts -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--Left side text-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reg ID"
+                android:textSize="18dp"
+                android:padding="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+        <!--right side text-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kevin Allen T D"
+                android:layout_gravity="end"
+                android:textSize="18dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/studentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="192224272"
+                android:textSize="18dp"
+                android:layout_gravity="end"
+                android:padding="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fee name"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feenameButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:background="@drawable/curved_border_darkgrey"
+            android:textAllCaps="false"
+            android:text="Fee Name"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scholarship"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/amountButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:background="@drawable/curved_border_darkgrey"
+            android:textAllCaps="false"
+            android:text="Scholarship"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            />
+
+        <LinearLayout
+            android:id="@+id/otherQuotaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/otherQuotaName"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:hint="Scholarship Name "
+                android:padding="12dp"
+                android:background="@drawable/curved_border_darkgrey"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"  />
+
+            <EditText
+                android:id="@+id/otherQuotaPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="5dp"
+                android:hint="Percentage%"
+                android:padding="12dp"
+                android:background="@drawable/curved_border_darkgrey"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incharge"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inchargeButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:background="@drawable/curved_border_darkgrey"
+            android:textAllCaps="false"
+            android:text="Incharge"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/DarkBlue"/>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logonew"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FeePayment"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MybuspassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminbusrequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusconfirmbookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentbuspassActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".AdmincontactusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplitmainpageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplitoptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaysuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DefaultersdbstudsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayoptionsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".DefaultersdbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminpaymenthistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminsduelistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayoptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatabasestudsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RsconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CdconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IfconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RfconfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaindatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminreceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudenthelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminstudentprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotpasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentduelistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScholarshipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImposefeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdmincleardueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminhomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentportalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudenthomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymenthistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

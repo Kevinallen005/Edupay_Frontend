@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".StudentbuspassActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/homeicon"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/smalllogo" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/icon" />
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/roleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:layout_marginTop="22dp">
+
+        <RadioButton
+            android:id="@+id/busroutes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Routes"
+            android:textColor="@drawable/text_selector"
+            android:textSize="16sp"
+            android:background="@drawable/selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"/>
+        <RadioButton
+            android:id="@+id/yourrequests"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="Requests"
+            android:textColor="@drawable/text_selector"
+            android:textSize="16sp"
+            android:background="@drawable/selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"/>
+
+
+    </RadioGroup>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/busrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/busses" />
+
+
+    <TextView
+        android:id="@+id/noRequestsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Requests Found"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/noRoutesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Routes Found"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/requests"
+        android:visibility="gone"/>   <!-- hidden by default -->
+
+
+
+</LinearLayout>

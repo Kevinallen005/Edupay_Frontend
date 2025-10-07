@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/curved_border_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+
+
+
+        <!-- Name & ID -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allen"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/studentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: 1"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+
+
+
+        <!-- Class -->
+        <TextView
+            android:id="@+id/studentClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-A"
+            android:layout_marginEnd="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/statusBadge"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="✅ Paid"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="12sp"
+            android:background="@drawable/curved_border_lightyellow"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"/>
+
+
+
+
+        <!-- More Options Icon -->
+        <ImageView
+            android:id="@+id/moreOptions"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/moreoptions"/>
+    </LinearLayout>
+
+</LinearLayout>
