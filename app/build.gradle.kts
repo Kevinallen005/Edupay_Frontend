@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.feepayment"
+    namespace = "com.simats.feepayment"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.feepayment"
+        applicationId = "com.simats.feepayment"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -52,4 +52,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.itextpdf:itext7-core:7.2.5")
+    implementation("com.android.billingclient:billing-ktx:6.1.0")
 }
