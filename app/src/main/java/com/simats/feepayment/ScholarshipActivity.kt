@@ -91,8 +91,6 @@ class ScholarshipActivity : AppCompatActivity() {
             var quotaName = ""
             var percentage = ""
 
-
-
             if (quotaText == "Other") {
                 quotaName = otherQuotaName.text.toString()
                 percentage = otherQuotaPercentage.text.toString()
@@ -100,6 +98,15 @@ class ScholarshipActivity : AppCompatActivity() {
                 val parts = quotaText.split(" - ")
                 quotaName = parts[0]
                 percentage = parts.getOrNull(1)?.replace("%", "") ?: ""
+            }
+
+            // ✅ New validation for "Other" quota percentage
+            if (quotaText == "Other") {
+                val percentValue = percentage.toDoubleOrNull()
+                if (percentValue == null || percentValue < 5) {
+                    Toast.makeText(this, "Percentage must be at least 5%", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
             }
 
             if (studentId == -1 || quotaName.isBlank() || percentage.isBlank() || feeNameText.isBlank() || inchargeText.isBlank()) {
@@ -206,10 +213,7 @@ class ScholarshipActivity : AppCompatActivity() {
                             startActivity(backIntent)
                         }
                         finish()
-
                     }
-
-
                 }
 
                 override fun onFailure(call: Call<FeesDueResponse>, t: Throwable) {

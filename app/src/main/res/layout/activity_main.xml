@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="Get Started"
+        android:text="Start"
         android:textSize="16sp"
         android:textColor="@color/white"
         android:backgroundTint="@color/blue"

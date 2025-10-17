@@ -143,7 +143,7 @@ class SubscriptionActivity : AppCompatActivity(), PurchasesUpdatedListener {
 
         btnSkipForNow.setOnClickListener {
             // Navigate to MainActivity
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
         btnSubscribe.setOnClickListener {

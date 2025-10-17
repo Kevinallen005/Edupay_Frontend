@@ -27,7 +27,7 @@ class AdminbusrequestsActivity : AppCompatActivity() {
         setContentView(R.layout.adminbusrequests)
 
         val menuIcon = findViewById<ImageView>(R.id.menuIcon)
-        MenuHandler.setupMenu(this, menuIcon)
+        AdminMenuHandler.setupMenu(this, menuIcon)
 
         recyclerView = findViewById(R.id.busreq)
         recyclerView.layoutManager = LinearLayoutManager(this)

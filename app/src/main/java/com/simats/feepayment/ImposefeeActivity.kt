@@ -90,6 +90,12 @@ class ImposefeeActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            val amountValue = feeAmt.toDoubleOrNull()
+            if (amountValue == null || amountValue <= 10) {
+                Toast.makeText(this, "Amount must be greater than 10", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val idsJson = Gson().toJson(selectedIds) // convert list → JSON string
 
             retrofit.instance.imposeFee(feeName, feeAmt, dueDate, idsJson)

@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 object retrofit {
-    const val BASE_URL = "http:/192.168.137.193/feespayment/"
+    const val BASE_URL = "http://14.139.187.229:8081/PDD-2025(9thmonth)/EDUPAY/"
 
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(60, TimeUnit.SECONDS)   // Connect timeout
